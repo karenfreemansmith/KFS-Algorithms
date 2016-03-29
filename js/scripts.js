@@ -1,13 +1,28 @@
 $(document).ready(function() {
-  $("h1").click(function(){
+  $("h1").dblclick(function(){
     alert("This is a header.");
   });
 
   $("p").click(function() {
-    alert("This is a paragraph");
+    $("img").slideToggle();
+    $("#walrus-showing").toggle();
+    $("#walrus-hidden").toggle();
   });
 
-  $("img").click(function() {
-    alert("This is an image");
+  $("img").hover(function() {
+    alert("Isn't he cute?");
+  });
+
+  $("button#green").click(function(){
+    $("body").removeClass();
+    $("body").addClass("green-background");
+  });
+  $("button#yellow").click(function(){
+    $("body").removeClass();
+    $("body").addClass("yellow-background");
+  });
+  $("button#red").click(function(){
+    $("body").removeClass();
+    $("body").addClass("red-background");
   });
 });
