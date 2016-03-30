@@ -24,3 +24,7 @@ img {
 .green-background {
   background-color: green;
 }
+
+#letter {
+  display: none;
+}
