@@ -28,3 +28,7 @@ img {
 #letter {
   display: none;
 }
+
+.parrot {
+  text-transform: uppercase;
+}

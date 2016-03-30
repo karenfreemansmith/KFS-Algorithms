@@ -49,10 +49,15 @@ $(document).ready(function() {
     $(".expeienceRequired").text(experienceInput*2);
     $(".todayDate").text(dateInput.toDateString());
 
-
     $("#application").hide();
     $("#letter").show();
 
+    event.preventDefault();
+  });
+
+  $("#sayit").submit(function(event) {
+    var originalInput = $("input#original").val();
+    $(".parrot").text(originalInput);
     event.preventDefault();
   });
 });
