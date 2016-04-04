@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible">
+    <meta name="viewport" value="width=device-width, initial-scale=1">
+    <title>Survey Form</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <div class="container">
+      <form>
+      <p>Pick your favorite movie:
+      <select id="movie">
+        <option value="1">Fast and Furious</option>
+        <option value="2">Harry Met Sally</option>
+        <option value="3">The Matrix</option>
+        <option value="4">5th Element</option>
+        <option value="5">A Knight's Tale</option>
+        <option value="6">How to Lose a Guy in 10 Days</option>
+        <option value="7">The Conjuring</option>
+        <option value="8">Breakfast at Tiffanys</option>
+      </select></p>
+
+      <p>Pick your favorite food:
+      <p><label>
+        <input type="radio" name="food" value="1" checked> Pizza
+      </label></p>
+      <p><label>
+        <input type="radio" name="food" value="2"> Cheesecake
+      </label></p>
+      <p><label>
+        <input type="radio" name="food" value="3"> Steak
+      </label></p>
+      <p><label>
+        <input type="radio" name="food" value="4"> Crab Rangoon
+      </label></p>
+      <p><label>
+        <input type="radio" name="food" value="5"> Chimichangas
+        </label></p>
+      <p><label>
+        <input type="radio" name="food" value="6"> Spaghetti
+        </label></p>
+
+      <p><label for="born">Date of birth:</label>
+        <input id="born" type="date"></p>
+
+      <p><label for="color">What is your favorite color?</label>
+        <input id="color" type="color"></p>
+      <p><button type="submit" class="btn">SAVE</button>
+
+<br><hr><br><hr><br>
+
+      <h3>Other input types from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">MDN</a></h3>
+
+      <p>A checkbox: <input type="checkbox"></p>
+      <p>Datetime: <input type="datetime"></p>
+      <p>Datetime-local: <input type="datetime-local"></p>
+      <p>Email: <input type="email"></p>
+      <p>File: <input type="file" accept=".txt"></p>
+      <p>Hidden: <input type="hidden"></p>
+      <p>Image: <input type="image" src="img/test.jpg" alt="no image?"></p>
+      <p>Month: <input type="month"></p>
+      <p>Number: <input type="number"></p>
+      <p>Password: <input type="password"></p>
+      <p>Range: <input type="range" min="18" max="99" step="10"></p>
+      <p>Reset: <input type="reset"></p>
+      <p>Search: <input type="search"></p>
+      <p>Telephone: <input type="tel"></p>
+      <p>Time: <input type="time"></p>
+      <p>URL: <input type="url"></p>
+      <p>Week: <input type="week"></p>
+
+    </div>
+  </body>
+</html>
