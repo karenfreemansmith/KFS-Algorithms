@@ -1,22 +1,5 @@
-img {
-  display: none;
-}
-#walrus-showing {
-  display: none;
-}
-
-.clickable {
-  cursor: pointer;
-  color: #0088cc;
-}
-
-.clickable:hover {
-  text-decoration: underline;
-}
-
-
-.yellow-background {
-  background-color: yellow;
+.blue-background {
+  background-color: blue;
 }
 .red-background {
   background-color: red;
@@ -25,10 +8,6 @@ img {
   background-color: green;
 }
 
-#letter {
-  display: none;
-}
-
-.parrot {
-  text-transform: uppercase;
+.btn {
+  margin-bottom: 15px;
 }

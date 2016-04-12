@@ -1,63 +1,11 @@
-$(document).ready(function() {
-  $("h1").dblclick(function(){
-    alert("This is a header.");
-  });
+var myColors = [0,0,0];
 
-  $("p").click(function() {
-    $("img").slideToggle();
-    $("#walrus-showing").toggle();
-    $("#walrus-hidden").toggle();
-  });
-
-  $("img").hover(function() {
-    alert("Isn't he cute?");
-  });
-
-  $("button#green").click(function(){
-    $("body").removeClass();
-    $("body").addClass("green-background");
-  });
-  $("button#yellow").click(function(){
-    $("body").removeClass();
-    $("body").addClass("yellow-background");
-  });
-  $("button#red").click(function(){
-    $("body").removeClass();
-    $("body").addClass("red-background");
-  });
-
-  $("#application form").submit(function(event) {
-    var firstnameInput = $("input#firstname").val();
-    var lastnameInput = $("input#lastname").val();
-    var streetInput = $("input#street").val();
-    var cityInput = $("input#city").val();
-    var stateInput = $("input#state").val();
-    var zipInput = $("input#zip").val();
-    var companynameInput = $("input#companyname").val();
-    var positionInput = $("input#position").val();
-    var experienceInput = parseInt($("input#experience").val());
-    var dateInput = new Date();
-
-    $(".firstname").text(firstnameInput);
-    $(".lastname").text(lastnameInput);
-    $(".street").text(streetInput);
-    $(".city").text(cityInput);
-    $(".state").text(stateInput);
-    $(".zip").text(zipInput);
-    $(".companyname").text(companynameInput);
-    $(".position").text(positionInput);
-    $(".expeienceRequired").text(experienceInput*2);
-    $(".todayDate").text(dateInput.toDateString());
-
-    $("#application").hide();
-    $("#letter").show();
-
-    event.preventDefault();
-  });
-
-  $("#sayit").submit(function(event) {
-    var originalInput = $("input#original").val();
-    $(".parrot").text(originalInput);
-    event.preventDefault();
-  });
+$("input").change(function(){
+  myColors[0] = parseInt($("#redVal").val());
+  myColors[1] = parseInt($("#blueVal").val());
+  myColors[2] = parseInt($("#greenVal").val());
+  var myBackground = "rgb("+ myColors[0] +","+ myColors[1]  +","+ myColors[2] +")";
+  $("body").css("background", myBackground);
+  $("#rgbCode").text("rgb("+ myColors[0] +","+ myColors[1]  +","+ myColors[2] +")");
+  $("#hexCode").text("#" + myColors[0].toString(16) + myColors[1].toString(16) + myColors[2].toString(16));
 });

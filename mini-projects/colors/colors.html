@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/jquery-1.12.2.js"></script>
-    <script src="js/scripts.js"></script>
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
     <title>Colors</title>
   </head>
   <body>
     <div class="container">
-      <h1>What's your favorite color?</h1>
-      <p>Click a button to choose what color you'd like his page to be:</p>
-      <button class="btn btn-success" id="green">Green</button>
-      <button class="btn btn-warning" id="yellow">Yellow</button>
-      <button class="btn btn-danger" id="red">Red</button>
+      <h1>Find your favorite color:</h1>
+      <h2 id="rgbCode">RGB Code</h2>
+      <h2 id="hexCode">Hex Code</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <button class="btn btn-danger btn-block" id="red">Red</button>
+          <input type="range" min="0" max="254" id="redVal">
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary btn-block" id="blue">Blue</button>
+          <input type="range" min="0" max="254" id="blueVal">
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-success btn-block" id="green">Green</button>
+          <input type="range" min="0" max="254" id="greenVal">
+        </div>
+      </div>
     </div>
+    <script src="../../js/jquery-1.12.2.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
