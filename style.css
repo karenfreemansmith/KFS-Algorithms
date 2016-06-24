@@ -1,0 +1,389 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+/* Colors
+
+*Primary*
+White: #f6f4ec;
+Green: #9bc152;
+Navy-Gray: #282932;
+
+*Secondary*
+Medium Green: #81a53d;
+Dark Green: #708647;
+Grays: #8b8d9b and #6d6f81;
+Blues: #6b6d85 and #47495d;
+Dark Navy: #1b1b21;  */
+
+/* Webfonts */
+
+
+/* Basic Elements */
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+  color: #333;
+	background: #fff;
+	font-family: Tahoma,Arial,sans-serif;
+	font-size: 1.25em;
+}
+
+p {
+	line-height: 1.1;
+}
+
+p + p {
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Ruge Boogie', cursive;
+	color: #aad400;
+}
+
+h1 {
+	font-size: 2.441em;
+	line-height: 1.5;
+}
+
+h2 {
+	font-size: 1.953em;
+	line-height: 1.3;
+}
+
+h3 {
+	font-size: 1.563em;
+	line-height: 1.2;
+}
+
+ul {
+	margin: 0;
+}
+
+li {
+	margin: 0;
+}
+
+a:link {
+	text-decoration: none;
+
+}
+a:visited {
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: none;
+}
+
+abbr {
+}
+
+::selection {
+}
+
+
+/* Specific Styles */
+
+header {
+	text-align: center;
+	padding: 8em 4%;
+	background-color: #111;
+}
+
+header h1 {
+	font-size: 6em;
+	margin: 0;
+}
+
+header h2 {
+	margin-top: 0;
+}
+
+header abbr {
+}
+
+.summary {
+	background-color: #aad400;
+	padding: 4em;
+}
+
+.summary p {
+}
+
+.summary p + p {
+}
+
+.summary a {
+}
+
+.summary a:hover {
+}
+
+.preamble, .requirements {
+}
+
+.preamble h3, .requirements h3 {
+}
+
+.preamble p, .requirements p {
+}
+
+.requirements a {
+}
+
+.requirements a:hover {
+}
+
+.requirements p:last-of-type {
+}
+
+.requirements p:last-of-type a {
+}
+
+.requirements p:last-of-type a:hover {
+}
+
+.strings {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding: 1em;
+	background-color: #aad400;
+}
+
+.strings h3 {
+		color: #f5f5f5;
+}
+
+.strings p {
+}
+
+.calculator {}
+.math {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding: 1em;
+
+}
+
+.calculator {
+	box-sizing: border-box;
+	padding: 1em;
+	background-color: #111;
+	color: #f5f5f5;
+}
+
+.calculator {
+}
+
+.calculator h3, .math h3 {
+
+}
+
+.calculator p, .math p {
+}
+
+.math h3 {
+}
+
+.math a {
+}
+
+.math a:hover {
+}
+
+.math p:last-of-type a:nth-of-type(1), .math p:last-of-type a:nth-of-type(2) {
+}
+
+footer {
+}
+
+footer:after {
+}
+
+footer a {
+}
+
+footer a:nth-of-type(even) {
+}
+
+footer a:hover {
+}
+
+aside {
+}
+
+.sidebar {
+}
+
+.design-selection {
+}
+
+.design-archives, .zen-resources {
+}
+
+.sidebar h3 {
+}
+
+.sidebar ul {
+}
+
+.sidebar li {
+}
+
+.sidebar a {
+}
+
+.sidebar a:hover {
+}
+
+.design-selection a:nth-of-type(even) {
+}
+
+.sidebar a:hover:nth-of-type(even) {
+}
+
+.zen-resources h3 {
+}
+
+.design-archives a, .zen-resources a {
+}
+
+/* Media Queries */
+
+@media (max-width: 64em) {
+  body {
+  }
+
+  .summary p {
+  }
+
+  .explanation h3, .participation h3, .preamble h3, .requirements h3, .benefits h3 {
+  }
+
+  .explanation p, .participation p, .preamble p, .requirements p, .benefits p {
+  }
+}
+
+@media (max-width: 54em) {
+  body {
+  }
+
+  .summary p {
+  }
+}
+
+@media (max-width: 47em) {
+  header h1 {
+  }
+
+  header h2 {
+  }
+
+  .explanation, .participation {
+  }
+}
+
+@media (max-width: 34em) {
+  header {
+  }
+  header h1 {
+  }
+
+  header h2 {
+  }
+
+  .summary p {
+  }
+
+  .summary p + p {
+  }
+
+  h3 {
+  }
+
+  .design-selection {
+  }
+
+  .design-selection li:last-of-type {
+  }
+
+  .design-archives {
+  }
+
+  .zen-resources {
+  }
+}
+
+@media (min-width: 47em) {
+  .benefits {
+  }
+
+.benefits h3 {
+  }
+
+.benefits p {
+  }
+}
+
+@media (min-width: 54em) {
+  .benefits {
+  }
+}
+
+@media (min-width: 64.125em) {
+  .benefits {
+  }
+
+  aside {
+  }
+
+  aside:hover {
+  }
+
+  aside:after {
+  }
+
+  aside {
+  }
+}
+
+@media (min-width: 94em) {
+  body {
+  }
+
+  .summary p {
+  }
+
+  .benefits {
+  }
+
+  .explanation h3, .explanation p, .participation h3, .participation p {
+  }
+}
+
+@media (min-width: 120em) {
+  body {
+  }
+
+  .summary p {
+  }
+
+  .preamble h3, .preamble p, .requirements h3, .requirements p {
+  }
+
+  .explanation h3, .explanation p, .participation h3, .participation p {
+  }
+
+  .benefits {
+  }
+}
+
+/* Animations */

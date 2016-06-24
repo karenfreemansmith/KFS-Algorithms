@@ -1,24 +1,13 @@
-# jQuery Practice Pages
-_by Karen Freeman-Smith_
+# Algorithms & Stuff
+## by [Karen Freeman-Smith](http://karenfreemansmith.github.io)
 
-## Various jQuery exercises that were too small for a project of their own.
+## A collection of small projects, primarily algorithm challenges
 
 - make page say what kind of element you click on (index.html)
 - play peek-a-boo with a walrus (peek-a-boo.html)
 - change background colors (colors.html)
 - form letter (letter.html)
 - convert to uppercase (upper.html)
-
-# jQuery Practice Pages
-__frequently updating__
-
-## by [Karen Freeman-Smith](http://karenfreemansmith.github.io)
-
-### Description
-__*jQuery Exercises*__
-
-Various small projects to learn jQuery:
-
 * make page tell what kind of element you click on (index.html)
 * play peek-a-boo with a walrus (peek-a-boo.html)
 * change background colors (colors.html)
