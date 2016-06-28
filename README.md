@@ -1,7 +1,11 @@
-# Algorithms & Stuff
+# [Algorithms](http://karenfreemansmith.github.io/algorithms)
+![project screenshot](/img/screenshot.jpg)
+
+__Version 1.1.0: June 28, 2016__
 ## by [Karen Freeman-Smith](http://karenfreemansmith.github.io)
 
-## A collection of small projects, primarily algorithm challenges
+### Description
+__*A collection of small programming challenges.*__
 
 - make page say what kind of element you click on (index.html)
 - play peek-a-boo with a walrus (peek-a-boo.html)
