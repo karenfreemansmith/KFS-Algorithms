@@ -1,26 +1,22 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+// Palette URL: http://paletton.com/#uid=12A0C0kJS6KvW5fuP8MNdeqCnl7 */
+// As hex codes */
+$color-primary-0: #163000;	// Main Primary color */
+$color-primary-1: #112500;
+$color-primary-2: #1D3E02;
+$color-primary-3: #2E6600;
+$color-primary-4: #449600;
 
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+// As RGBa codes */
+$rgba-primary-0: rgba( 22, 48,  0,1);	// Main Primary color */
+$rgba-primary-1: rgba( 17, 37,  0,1);
+$rgba-primary-2: rgba( 29, 62,  2,1);
+$rgba-primary-3: rgba( 46,102,  0,1);
+$rgba-primary-4: rgba( 68,150,  0,1);
 
-/* Colors
-
-*Primary*
-White: #f6f4ec;
-Green: #9bc152;
-Navy-Gray: #282932;
-
-*Secondary*
-Medium Green: #81a53d;
-Dark Green: #708647;
-Grays: #8b8d9b and #6d6f81;
-Blues: #6b6d85 and #47495d;
-Dark Navy: #1b1b21;  */
-
-/* Webfonts */
-
+$white: #f9f9f9;
 
 /* Basic Elements */
+
 html {
 	margin: 0;
 	padding: 0;
@@ -28,10 +24,18 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-  color: #333;
-	background: #fff;
+  color: $color-primary-1;
+	background: $color-primary-4;
 	font-family: Tahoma,Arial,sans-serif;
 	font-size: 1.25em;
+}
+
+a {
+	color: $color-primary-3;
+}
+
+a:hover {
+	color: $color-primary-2;
 }
 
 p {
@@ -43,7 +47,7 @@ p + p {
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Ruge Boogie', cursive;
-	color: #aad400;
+	color: $color-primary-4;
 }
 
 h1 {
@@ -93,7 +97,7 @@ abbr {
 header {
 	text-align: center;
 	padding: 8em 4%;
-	background-color: #111;
+	background-color: $color-primary-1;
 }
 
 header h1 {
@@ -109,8 +113,13 @@ header abbr {
 }
 
 .summary {
-	background-color: #aad400;
-	padding: 4em;
+	background-color: $color-primary-4;
+	color: $color-primary-1;
+	padding: 2em;
+}
+
+.summary h3 {
+	color: $color-primary-1;
 }
 
 .summary p {
@@ -125,47 +134,22 @@ header abbr {
 .summary a:hover {
 }
 
-.preamble, .requirements {
-}
-
-.preamble h3, .requirements h3 {
-}
-
-.preamble p, .requirements p {
-}
-
-.requirements a {
-}
-
-.requirements a:hover {
-}
-
-.requirements p:last-of-type {
-}
-
-.requirements p:last-of-type a {
-}
-
-.requirements p:last-of-type a:hover {
-}
-
 .strings {
 	width: 50%;
 	float: left;
 	box-sizing: border-box;
-	padding: 1em;
-	background-color: #aad400;
+	background-color: $color-primary-1;
+	color: $color-primary-4;
 }
 
 .strings h3 {
-		color: #f5f5f5;
+		color: $color-primary-4;
 }
 
 .strings p {
 }
 
-.calculator {}
-.math {
+.math, .strings {
 	width: 50%;
 	float: left;
 	box-sizing: border-box;
@@ -175,9 +159,19 @@ header abbr {
 
 .calculator {
 	box-sizing: border-box;
-	padding: 1em;
-	background-color: #111;
-	color: #f5f5f5;
+	padding: 1em 20%;
+	color: $color-primary-1;
+	background-color: $color-primary-4;
+}
+
+button {
+	width: 96px;
+	height: 48px;
+	border: solid black 2px;
+	margin: 1px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.8em;
 }
 
 .calculator {
@@ -190,6 +184,11 @@ header abbr {
 .calculator p, .math p {
 }
 
+.math {
+	color: $color-primary-1;
+	background-color: $white;
+	padding-bottom: 90px;
+}
 .math h3 {
 }
 
@@ -203,6 +202,7 @@ header abbr {
 }
 
 footer {
+	clear: both;
 }
 
 footer:after {
